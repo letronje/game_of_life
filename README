@@ -1,0 +1,10 @@
+Trivial implementation of Game of Life
+
+- Universe class represents an immutable instance of a Game of life universe
+  - the 'next' method inflates/deflates the next immutable universe state based on growth/death
+
+- CellEnvironment class is used to hold info(alive, dead count) about the layer of cells(upto 8) that wraps the current cell
+
+- New rule can be added by adding a new class to the 'Rules' module
+  - For now, rules are assumed to be simple enough to consider only the cell and the number of neighbors that are alive/dead.
+

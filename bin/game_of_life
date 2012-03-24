@@ -1,0 +1,10 @@
+#! /usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+require 'game_of_life'
+require 'game_of_life/ui'
+
+include GameOfLife::UI
+
+CommandLine.new.run
